@@ -1,0 +1,382 @@
+/* General Reset */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+  }
+  
+  body {
+    line-height: 1.6;
+    background-color: #1e1a1a;
+    color: #0f0e0e;
+  }
+  em {
+    font-style: italic; /* Italicized text */
+  }
+  
+  .oblique-text {
+    font-style: oblique; /* Slightly slanted text */
+  }
+  
+  .glow-text {
+    font-size: 3rem; /* Large font size */
+    font-family: 'Charmonman';font-size: 30px;
+    color: #fff; /* Text color */
+    text-transform: uppercase; /* Optional: Uppercase text */
+    text-align: center;
+  
+    /* Initial Glow Effect */
+    text-shadow:
+      0 0 5px #fff, /* Inner glow */
+      0 0 10px #fff, /* Medium glow */
+      0 0 20px #ff00ff, /* Outer glow (pink) */
+      0 0 40px #ec2ddc, /* Stronger glow */
+      0 0 80px #ff00ff, /* Even stronger glow */
+      0 0 90px #ff00ff; /* Maximum glow */
+  
+    /* Animation for Pulsating Glow */
+    animation: glow-animation 2s infinite alternate;
+  }
+  
+  /* Keyframes for Pulsating Glow */
+  @keyframes glow-animation {
+    0% {
+      text-shadow:
+        0 0 5px #fff,
+        0 0 10px #ee19b2,
+        0 0 20px #fc12fc,
+        0 0 40px #e41da9,
+        0 0 80px #ff00ff,
+        0 0 90px #ff00ff;
+    }
+    100% {
+      text-shadow:
+        0 0 10px #fff,
+        0 0 20px #f348df,
+        0 0 30px #0c1fed,
+        0 0 50px #ed2db7,
+        0 0 100px #fb20b6,
+        0 0 120px #f12ab6;
+    }
+  }
+  .services,.h2{
+    align-items:center ;
+    justify-content: center;
+    text-align: center;
+  }
+  .services-card{
+    display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(4, 1fr); /* Create 5 equal-width columns */
+  grid-gap: 10px; /* Add spacing between the images */
+  width: 100%; /* Full width of the parent container */
+  max-width: 800px; /* Optional: limit the maximum width */
+  margin: 0 auto; /* Center the container */
+}
+
+  
+
+  .service text {
+    color: #ccc;
+  }
+
+      
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#121010;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo a {
+    color: rgb(234, 57, 202);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: rgb(234, 57, 202);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color:rgb(181, 31, 186); /* Tomato color on hover */
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: white;
+    margin: 3px 0;
+  }
+  
+  /* Hero Section */
+  .hero {
+    background: url('braids.jpg') no-repeat center center/cover;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: rgb(186, 181, 181);
+    text-align: center;
+  }
+  
+  .hero-content h1 {
+    font-size: 3rem;
+    margin-bottom: 10px;
+  }
+  
+  .hero-content p {
+    font-size: 1.2rem;
+    margin-bottom: 20px;
+  }
+  
+  .btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:rgb(212, 30, 157);
+    color: white;
+    text-decoration: none;
+    border-radius: 4px;
+    transition: background-color 0.3s ease;
+  }
+  
+  .btn:hover {
+    background-color: rgb(136, 35, 136);
+  }
+  
+  /* Book Now Section */
+  .book-now {
+    color: rgb(136, 35, 136);
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  #bookingForm {
+    max-width: 600px;
+    margin: 0 auto;
+    text-align: left;
+  }
+  
+  .form-group {
+    margin-bottom: 15px;
+  }
+  
+  label {
+    display: block;
+    font-weight: bold;
+    margin-bottom: 5px;
+    color: #fff;
+  }
+  
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  select,
+  textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ea0fac;
+    border-radius: 4px;
+    font-size: 1rem;
+    transition: border-color 0.3s ease;
+  }
+  
+  input[type="text"]:focus,
+  input[type="email"]:focus,
+  input[type="date"]:focus,
+  select:focus,
+  textarea:focus {
+    border-color:  rgb(136, 35, 136);
+    outline: none;
+  }
+  
+  .submit-btn {
+    display: inline-block;
+    padding: 10px 20px;
+    background-color:  rgb(136, 35, 136);
+    color: white;
+    border: none;
+    border-radius: 4px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+  }
+  
+  .submit-btn:hover {
+    background-color: #b536b9;
+  }
+  
+  /* About Us Section */
+  .about-us {
+    padding: 50px 20px;
+    text-align: center;
+  }
+  
+  .about-us p {
+    color: rgb(185, 45, 185);
+    font-size: 1.1rem;
+  }
+  .about-us{
+    color: rgb(171, 32, 171);
+  }
+  
+ /* General Footer Styling */
+.footer {
+  background-color: #150314; /* Dark background for contrast */
+  color: white;
+  text-align: center;
+  padding: 20px 10px;
+  position: relative; /* Allows child elements to be positioned relative to the footer */
+}
+
+.footer-content {
+  margin-bottom: 20px; /* Space between footer text and buttons */
+}
+
+/* Container for Floating Buttons */
+.floating-buttons-footer {
+  display: flex;
+  justify-content: center; /* Centers the buttons horizontally */
+  gap: 15px; /* Adds spacing between the buttons */
+  margin-top: 10px; /* Space above the buttons */
+}
+
+/* Styling for Each Button */
+.floating-button {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 50px; /* Width of the button */
+  height: 50px; /* Height of the button */
+  border-radius: 50%; /* Makes the button circular */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Adds a subtle shadow */
+  transition: transform 0.2s ease-in-out; /* Smooth hover effect */
+  text-decoration: none; /* Removes underlines from links */
+}
+
+/* Hover Effect */
+.floating-button:hover {
+  transform: scale(1.1); /* Slightly enlarges the button on hover */
+}
+
+/* WhatsApp Button Styling */
+.whatsapp {
+  background-color: #25D366; /* WhatsApp Green */
+}
+
+/* Instagram Button Styling */
+.instagram {
+  background-color: #c6358f; /* Instagram Pink */
+}
+/* General Container Styling */
+.row {
+  display: flex; /* Aligns images horizontally */
+  justify-content: space-between; /* Adds equal spacing between images */
+  gap: 20px; /* Adds space between images */
+  margin: 20px auto; /* Centers the container on the page */
+  max-width: 1200px; /* Limits the width of the container */
+}
+
+/* Image Styling */
+.column img {
+  width: calc(33.33% - 20px); /* Ensures all images take up equal width with spacing */
+  height: 400px; /* Sets a fixed height for all images */
+  object-fit: cover; /* Ensures the images maintain aspect ratio without distortion */
+  border-radius: 15px; /* Optional: Adds rounded corners */
+  box-shadow: 0 8px 12px rgba(0, 0, 0, 0.1); /* Optional: Adds a subtle shadow */
+  transition: transform 0.3s ease-in-out; /* Smooth hover effect */
+}
+
+/* Hover Effect */
+.row img:hover {
+  transform: scale(1.05); /* Slightly enlarges the image on hover */
+}
+  .column{
+    color: rgb(171, 32, 171) ;
+    padding-left: 30px;
+    float: left;
+    width: 400px;
+    padding: 5px;
+  }
+  .row::after{
+    content:"" ;
+    clear: both;
+    display: table;
+  }
+.text{
+  color:#b536b9 ;
+  align-items:center ;
+  justify-content: center;
+  text-align: center;
+  }
+  /* General container styling */
+.logo-container {
+  display: flex; /* Use flexbox to align items horizontally */
+  justify-content: space-around; /* Distribute items evenly */
+  align-items: center; /* Vertically center align items */
+  padding: 20px; /* Add some padding around the container */
+  background-color:  #1e1a1a; /* Light background color */
+  border-radius: 10px; /* Rounded corners */
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1); /* Subtle shadow for depth */
+}
+
+/* Individual logo item styling */
+.logo-item {
+  text-align: center; /* Center align text and images */
+  font-family: Arial, sans-serif; /* Choose a clean font */
+  color: #f35be4; /* Dark text color */
+}
+
+/* Logo image styling */
+.logo-item img {
+  width: 50px; /* Set a consistent size for all logos */
+  height: auto; /* Maintain aspect ratio */
+  margin-bottom: 10px; /* Space between image and text */
+}
+
+/* Paragraph text styling */
+.logo-item p {
+  margin: 0; /* Remove default margin */
+  font-size: 14px; /* Smaller font size for description */
+  line-height: 1.5; /* Improve readability */
+}
+    .location-icon {
+      width: 48px;
+      height: 48px;
+      fill: #f32bc4; /* Change color */
+      cursor: pointer;
+      transition: transform 0.3s ease;
+    }
+
+    .location-icon:hover {
+      transform: scale(1.2); /* Enlarge on hover */
+    }
+
+  
+  
+  
+  
+  

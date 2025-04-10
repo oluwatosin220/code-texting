@@ -1,0 +1,163 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+  <style>
+    General Reset */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}    
+.body{
+  background-color: #121010;
+}
+  /* Navbar Styling */
+  .navbar {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color:#121010;
+    padding: 10px 20px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+  }
+  
+  .logo a {
+    color: rgb(234, 57, 202);
+    text-decoration: none;
+    font-size: 1.5rem;
+    font-weight: bold;
+  }
+  
+  .nav-links {
+    list-style: none;
+    display: flex;
+  }
+  
+  .nav-links li {
+    margin-left: 20px;
+  }
+  
+  .nav-links a {
+    color: rgb(234, 57, 202);
+    text-decoration: none;
+    font-size: 1rem;
+    transition: color 0.3s ease;
+  }
+  
+  .nav-links a:hover {
+    color:rgb(181, 31, 186); /* Tomato color on hover */
+  }
+  
+  .hamburger {
+    display: none;
+    flex-direction: column;
+    cursor: pointer;
+  }
+  
+  .bar {
+    width: 25px;
+    height: 3px;
+    background-color: rgb(234, 24, 168);
+    margin: 3px 0;
+  }
+  .hero{
+    height: 30vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-top: 60px;
+  }
+  .hero h1{
+    color:rgb(234, 57, 202);
+    font-size: 3rem;
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+  }
+  .image-container {
+  display: grid; /* Use CSS Grid for layout */
+  grid-template-columns: repeat(4, 1fr); /* Create 5 equal-width columns */
+  grid-gap: 10px; /* Add spacing between the images */
+  width: 100%; /* Full width of the parent container */
+  max-width: 800px; /* Optional: limit the maximum width */
+  margin: 0 auto; /* Center the container */
+}
+
+/* Image styling */
+.image-container img {
+  width: 100%; /* Make the image fill the grid cell */
+  height: auto; /* Maintain aspect ratio */
+  object-fit: cover; /* Ensure images are cropped to fit the container */
+  aspect-ratio: 1 / 1; /* Force images to be square (height = width) */
+  border-radius: 5px; /* Optional: rounded corners */
+}
+.text{
+  font-size: 2rem;
+  color: #b536b9;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+}
+  
+  </style>
+</head>
+<body>
+   <!-- Navbar -->
+   <nav class="navbar">
+    <div class="logo">
+      <a href="#">BraidsBooking</a>
+    </div>
+    <ul class="nav-links">
+      <li><a href="index.html">Home</a></li>
+    </ul>
+    <div class="hamburger">
+      <span class="bar"></span>
+      <span class="bar"></span>
+      <span class="bar"></span>
+    </div>
+  </nav>
+  <section class="hero" id="home">
+    <h1>Gallery</h1>
+  </section>
+
+  <div class="container" >
+           
+    <div class="image-container">
+        <img src="./allback.jpeg" alt="hair">
+        <img src="./bald.jpeg" alt="hair">
+        <img src="./hhair.jpeg" alt="hair">
+        <img src="flip.jpeg" alt="hair">
+        <img src="./kids.jpeg" alt="hair">
+        <img src="male.jpeg" alt="hair">
+        <img src="hair.jpeg" alt="hair">
+        <img src="./22.jpeg" alt="hair">
+        <img src="./two step.jpeg" alt="hair">
+        <img src="./short.jpeg" alt="hair">
+        <img src="./boobo.jpeg" alt="hair">
+        <img src="./big.jpeg" alt="hair">
+        <img src="./faba.jpeg" alt="hair">
+        <img src="./fabaa.jpeg" alt="hair">
+        <img src="./faa.jpeg" alt="hair">
+        <img src="./boho.jpeg" alt="hair">
+        <img src="./2step.jpeg" alt="hair">
+        <img src="./alice.jpeg" alt="hair">
+        <img src="./allbackk.jpeg" alt="hair">
+        <img src="./loveee.jpeg" alt="hair">
+        </div>
+   </div>
+   <section >
+    <div  class="hero"><h1>protective hairstyle</h1></div>  
+      <p class="text">benefit of protective hairstyle</p>
+    
+    <img src="./pro.jpeg" alt="hair">
+    <img src="./ppo.jpeg" alt="hair">
+    <p>
+        While protective styles don't directly cause hair growth,<br> they can help you retain length by minimizing breakage and damage.<br> When properly installed and maintained,<br> protective styles can create an environment that supports hair growth by reducing the daily stress on your hair.</p>
+  
+   </section>
+ </section>
+</body>
+</html>
