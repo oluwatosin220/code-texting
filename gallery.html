@@ -12,6 +12,11 @@
   box-sizing: border-box;
 }    
 .body{
+  margin: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow-x: hidden; /* Prevent horizontal scrolling */
   background-color: #121010;
 }
   /* Navbar Styling */
@@ -65,8 +70,39 @@
     background-color: rgb(234, 24, 168);
     margin: 3px 0;
   }
-  .hero{
-    height: 30vh;
+  .image-container {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
+  gap:45px; /* Space between images */
+  width: 100vw; /* Full width of the viewport */
+  height: 100vh; /* Full height of the viewport */
+  padding: 10px; /* Optional: Add padding for spacing */
+  box-sizing: border-box; /* Include padding in width/height calculations */
+  overflow-y: auto; /* Enable scrolling if content overflows */
+}
+.image-container img {
+  width: 200px; /* Fill the grid cell */
+  height: 200px; /* Maintain aspect ratio */
+  object-fit: cover; /* Crop images to fit the container */
+  border-radius: 5px; /* Optional: Rounded corners */
+  gap: 1.5rem;
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.image-container img:hover {
+  transform: scale(1.05); /* Enlarge images on hover */
+}
+.image-container img {
+  transition: transform 0.3s ease, opacity 0.3s ease;
+  opacity: 0.9;
+}
+
+.image-container img:hover {
+  transform: scale(1.05);
+  opacity: 1;
+}
+.hero{
+    height: 15vh;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -77,23 +113,6 @@
     font-size: 3rem;
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
   }
-  .image-container {
-  display: grid; /* Use CSS Grid for layout */
-  grid-template-columns: repeat(4, 1fr); /* Create 5 equal-width columns */
-  grid-gap: 10px; /* Add spacing between the images */
-  width: 100%; /* Full width of the parent container */
-  max-width: 800px; /* Optional: limit the maximum width */
-  margin: 0 auto; /* Center the container */
-}
-
-/* Image styling */
-.image-container img {
-  width: 100%; /* Make the image fill the grid cell */
-  height: auto; /* Maintain aspect ratio */
-  object-fit: cover; /* Ensure images are cropped to fit the container */
-  aspect-ratio: 1 / 1; /* Force images to be square (height = width) */
-  border-radius: 5px; /* Optional: rounded corners */
-}
 .text{
   font-size: 2rem;
   color: #b536b9;
@@ -101,10 +120,10 @@
   justify-content: center;
   align-items: center;
 }
-  
+
   </style>
 </head>
-<body>
+<body class="body">
    <!-- Navbar -->
    <nav class="navbar">
     <div class="logo">
@@ -148,16 +167,6 @@
         <img src="./loveee.jpeg" alt="hair">
         </div>
    </div>
-   <section >
-    <div  class="hero"><h1>protective hairstyle</h1></div>  
-      <p class="text">benefit of protective hairstyle</p>
-    
-    <img src="./pro.jpeg" alt="hair">
-    <img src="./ppo.jpeg" alt="hair">
-    <p>
-        While protective styles don't directly cause hair growth,<br> they can help you retain length by minimizing breakage and damage.<br> When properly installed and maintained,<br> protective styles can create an environment that supports hair growth by reducing the daily stress on your hair.</p>
-  
-   </section>
  </section>
 </body>
 </html>
