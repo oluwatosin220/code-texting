@@ -4,6 +4,7 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Document</title>
+  <link rel="stylesheet" href="style.css">
   <style>
     General Reset */
 * {
@@ -11,134 +12,25 @@
   padding: 0;
   box-sizing: border-box;
 }    
-.body{
-  margin: 0;
-  padding: 0;
-  width: 100%;
-  height: 100%;
-  overflow-x: hidden; /* Prevent horizontal scrolling */
-  background-color: #121010;
-}
-  /* Navbar Styling */
-  .navbar {
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-    background-color:#121010;
-    padding: 10px 20px;
-    position: sticky;
-    top: 0;
-    z-index: 1000;
-  }
-  
-  .logo a {
-    color: rgb(234, 57, 202);
-    text-decoration: none;
-    font-size: 1.5rem;
-    font-weight: bold;
-  }
-  
-  .nav-links {
-    list-style: none;
-    display: flex;
-  }
-  
-  .nav-links li {
-    margin-left: 20px;
-  }
-  
-  .nav-links a {
-    color: rgb(234, 57, 202);
-    text-decoration: none;
-    font-size: 1rem;
-    transition: color 0.3s ease;
-  }
-  
-  .nav-links a:hover {
-    color:rgb(181, 31, 186); /* Tomato color on hover */
-  }
-  
-  .hamburger {
-    display: none;
-    flex-direction: column;
-    cursor: pointer;
-  }
-  
-  .bar {
-    width: 25px;
-    height: 3px;
-    background-color: rgb(234, 24, 168);
-    margin: 3px 0;
-  }
-  .image-container {
-  display: grid;
-  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
-  gap:45px; /* Space between images */
-  width: 100vw; /* Full width of the viewport */
-  height: 100vh; /* Full height of the viewport */
-  padding: 10px; /* Optional: Add padding for spacing */
-  box-sizing: border-box; /* Include padding in width/height calculations */
-  overflow-y: auto; /* Enable scrolling if content overflows */
-}
-.image-container img {
-  width: 200px; /* Fill the grid cell */
-  height: 200px; /* Maintain aspect ratio */
-  object-fit: cover; /* Crop images to fit the container */
-  border-radius: 5px; /* Optional: Rounded corners */
-  gap: 1.5rem;
-  transition: transform 0.3s ease; /* Smooth hover effect */
-}
-
-.image-container img:hover {
-  transform: scale(1.05); /* Enlarge images on hover */
-}
-.image-container img {
-  transition: transform 0.3s ease, opacity 0.3s ease;
-  opacity: 0.9;
-}
-
-.image-container img:hover {
-  transform: scale(1.05);
-  opacity: 1;
-}
-.hero{
-    height: 15vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    margin-top: 60px;
-  }
-  .hero h1{
-    color:rgb(234, 57, 202);
-    font-size: 3rem;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
-  }
-.text{
-  font-size: 2rem;
-  color: #b536b9;
-  text-align: center;
-  justify-content: center;
-  align-items: center;
-}
 
   </style>
 </head>
-<body class="body">
+<body class="body" id="gallery">
    <!-- Navbar -->
-   <nav class="navbar">
-    <div class="logo">
+   <nav class="nava">
+    <div class="loo">
       <a href="#">BraidsBooking</a>
     </div>
-    <ul class="nav-links">
+    <ul class="nv-link">
       <li><a href="index.html">Home</a></li>
     </ul>
-    <div class="hamburger">
+    <div class="amburger">
       <span class="bar"></span>
       <span class="bar"></span>
       <span class="bar"></span>
     </div>
   </nav>
-  <section class="hero" id="home">
+  <section class="her" id="home">
     <h1>Gallery</h1>
   </section>
 
@@ -154,6 +46,7 @@
         <img src="hair.jpeg" alt="hair">
         <img src="./22.jpeg" alt="hair">
         <img src="./two step.jpeg" alt="hair">
+        <img src="./loeeee.jpeg" alt="hair">
         <img src="./short.jpeg" alt="hair">
         <img src="./boobo.jpeg" alt="hair">
         <img src="./big.jpeg" alt="hair">
@@ -161,10 +54,31 @@
         <img src="./fabaa.jpeg" alt="hair">
         <img src="./faa.jpeg" alt="hair">
         <img src="./boho.jpeg" alt="hair">
+        <img src="./box.jpeg" alt="hair">
         <img src="./2step.jpeg" alt="hair">
         <img src="./alice.jpeg" alt="hair">
+        <img src="./braisds.jpeg" alt="hair">
         <img src="./allbackk.jpeg" alt="hair">
         <img src="./loveee.jpeg" alt="hair">
+        <img src="lovie.jpeg" alt="hair">
+        <img src="./fulani.jpeg" alt="hair">
+        <img src="./side.jpeg" alt="hair">
+        <img src="./cornrow.jpeg" alt="hair">
+        <img src="./locs.jpeg" alt="hair">
+        <img src="./ziz.jpeg" alt="hair">
+        <img src="./shuuu.jpeg" alt="hair">
+        <img src="cuu.jpeg" alt="hair">
+        <img src="bbb.jpeg" alt="hair">
+        <img src="./naa.jpeg" alt="hair">
+        <img src="./naa3.jpeg" alt="hair">
+        <img src="tural.jpeg" alt="hair">
+        <img src="./2twiat.jpg" alt="hair">
+        <img src="./teee.jpeg" alt="hair">
+        <img src="./shu.jpg" alt="">
+        <img src="./ppo.jpeg" alt="hair">
+        <img src="./pro.jpeg" alt="hair">
+        <img src="./mmen.jpeg" alt="hair">
+        <img src="./mmm.jpeg" alt="hair">
         </div>
    </div>
  </section>

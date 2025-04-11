@@ -47,19 +47,19 @@
   <div class="column">
     <div class="content">
       <img src="./allback.jpeg" alt="hair" style="width:100%">
-      <h4>cornrow</h4>
+      <h2>cornrow</h2>
     </div>
   </div>
   <div class="column">
     <div class="content">
       <img src="./hair.jpeg" alt="hair" style="width:100%">
-      <h4>box braid</h4>
+      <h2>box braid</h2>
     </div>
   </div>
   <div class="column">
     <div class="content">
       <img src="./two step.jpeg" alt="hair" style="width:100%">
-      <h4>fulani braids</h4>
+      <h2>fulani braids</h2>
     </div>
   </div>
 </div>
@@ -67,7 +67,7 @@
 
   <!-- Book Now Section -->
   <section id="book-now" class="book-now">
-    <h2>Book Your Appointment</h2>
+    <h2 class="glow-text">Book Your Appointment</h2>
     <form id="bookingForm" action="#" method="POST">
       <div class="form-group">
         <label for="name">Full Name</label>
@@ -82,6 +82,10 @@
         <input type="date" id="date" name="date" required>
       </div>
       <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+      <div class="form-group">
         <label for="service">Select Service</label>
         <select id="service" name="service" required>
           <option value="">--Choose a service--</option>
@@ -92,26 +96,38 @@
           <option value="fulani-braids">Fulani Braids</option>
         </select>
       </div>
-      <button type="submit" class="submit-btn">Confirm Booking</button>
+      <button id="book-now" type="submit" class="submit-btn">Confirm Booking</button>
     </form>
   </section>
-
-  <section class="booking-policies">
-    <h2 class="glow-text">Booking Policies</h2>
-  <div class="logo-container">
-    <div class="logo-item">
-      <img src="./late.jpeg" alt="Late Arrival Logo">
-      <p>LATE ARRIVAL</p>
-      <p>please arrive on time.<br> a 15 mins grace period<br> will be given but after this<br> your appointment will be<br>cancelled and your deposit will not be<br> refunded.</p>
+  <script>document.getElementById("book-now").addEventListener("submit", function(event) {
+    event.preventDefault(); //prevent default form submission
+    alert('successfully booked');
+    this.reset();
+  });</script>
+  <section>
+    <h2 class="glow-text" id="booking-policies">BOOKING POLICIES</h2>
+    <section class="policy-container">
+      <!-- Cancellation Policy (Left) -->
+      <div class="policy-section left">
+        <div class="icon">×</div>
+        <h2 class="policy-title">CANCELLATION</h2>
+        <p class="policy-description">
+          A 24-hours notice is required prior to cancellation or<br> rescheduling of an appointment.
+        </p>
+      </div>
     </div>
 
-  <div class="logo-item">
-    <img src="cancel.jpeg" alt="cancel Logo">
-    <p>CANCELLATION</p>
-    <p>a 24-hours notice is<br> required prior to cancellation<br>reschedulling of an <br>appointment.</p>
-  </div>
-</div>
-</section>
+    <!-- Late Arrival Policy -->
+    
+        <!-- Late Arrival Policy (Right) -->
+        <div class="policy-section right">
+          <div class="icon">⏰</div>
+          <h2 class="policy-title">LATE ARRIVAL</h2>
+          <p class="policy-description">
+            Please arrive on time. A 15-minute grace period will be given,<br> but after this, your appointment will be cancelled, and your deposit will not be refunded.
+          
+    </div>
+  </section>
 
 <footer class="footer">
   <div class="footer-content">
