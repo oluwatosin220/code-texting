@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+   <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <nav class="navbar">
+        <div class="logo">
+          <a href="#">BraidsBooking</a>
+        </div>
+        <ul class="nav-links">
+          <li><a href="index.html">Home</a></li>
+          <li><a href="ndex.html">Booking-policies</a></li>
+        </ul>
+        <div class="hamburger">
+          <span class="bar"></span>
+          <span class="bar"></span>
+          <span class="bar"></span>
+        </div>
+      </nav>
+    
+  <!-- Book Now Section -->
+  <section id="book-now" class="book-now">
+    <h2 class="glow-text">Book Your Appointment</h2>
+    <form id="bookingForm" action="#" method="POST">
+      <div class="form-group">
+        <label for="name">Full Name</label>
+        <input type="text" id="name" name="name" placeholder="Enter your name" required>
+      </div>
+      <div class="form-group">
+        <label for="email">Email Address</label>
+        <input type="email" id="email" name="email" placeholder="Enter your email" required>
+      </div>
+      <div class="form-group">
+        <label for="service">Select Service</label>
+        <select id="service" name="service" required>
+          <option value="">--Choose a service--</option>
+          <option value="twist">Natural twist</option>
+          <option value="color">Color</option>
+          <option value="box-braids">Box Braids</option>
+          <option value="cornrows">Cornrows</option>
+          <option value="fulani-braids">Fulani Braids</option>
+        </select>
+      <div class="form-group">
+        <label for="date">Preferred Date</label>
+        <input type="date" id="date" name="date" required>
+      </div>
+      <div class="form-group">
+        <label for="time">Time</label>
+        <input type="time" id="time" name="time" required>
+      </div>
+     
+      </div>
+      <button id="book-now" type="submit" class="submit-btn">Confirm Booking</button>
+    </form>
+  </section>
+  <script>document.getElementById("book-now").addEventListener("submit", function(event) {
+    event.preventDefault(); //prevent default form submission
+    alert('successfully booked');
+    this.reset();
+  });</script>
+</body>
+</html>
