@@ -8,8 +8,8 @@
   body {
     font-family: 'Arial', sans-serif;
     line-height: 1.6;
-    background-color: #f8f4ef; /* Blue background */
-    color: #FFFFFF; /* White text */
+   background-color: #f8f4ef;
+    color: #be940a; /* White text */
 }
   
   .hero h1{
@@ -26,10 +26,10 @@
     text-shadow:
       0 0 5px #fff,
       0 0 10px #fff,
-      0 0 20px #ff00ff,
-      0 0 40px #ff00ff,
-      0 0 80px #ff00ff,
-      0 0 90px #ff00ff;
+      0 0 20px #c441a5,
+      0 0 40px #eb2db5,
+      0 0 80px #ea25a5,
+      0 0 90px #ff0dba;
     animation: glow-animation 2s infinite alternate;
   }
   
@@ -38,26 +38,26 @@
       text-shadow:
         0 0 5px #fff,
         0 0 10px #fff,
-        0 0 20px #ff00ff,
-        0 0 40px #ff00ff,
-        0 0 80px #ff00ff,
-        0 0 90px #ff00ff;
+        0 0 20px #e747af,
+        0 0 40px #ef1fc2,
+        0 0 80px #e448b3,
+        0 0 90px #f53bd6;
     }
     100% {
       text-shadow:
         0 0 10px #fff,
         0 0 20px #fff,
-        0 0 30px #ff00ff,
-        0 0 50px #ff00ff,
-        0 0 100px #ff00ff,
-        0 0 120px #ff00ff;
+        0 0 30px #f731d6,
+        0 0 50px #da3bca,
+        0 0 100px #d521b7,
+        0 0 120px #d03bc6;
     }
   }
 
 /* Header and Navigation */
 header {
   background-color: #333;
-  color: white;
+  color: rgb(174, 41, 159);
   padding: 10px 20px;
   display: flex;
   justify-content: space-between;
@@ -76,13 +76,13 @@ header {
 }
 
 .nav-links li a {
-  color: white;
+  color: rgb(183, 27, 186);
   text-decoration: none;
   transition: color 0.3s ease;
 }
 
 .nav-links li a:hover {
-  color: #ff6b6b; /* Pink accent color for hover effect */
+  color: #eb20c6; /* Pink accent color for hover effect */
 }
 
 /* Hero Section */
@@ -154,14 +154,14 @@ header {
   margin: 0 auto; /* Center the container */
 }
   .service text {
-    color: #ccc;
+    color: #f8eeee;
   }
  /* Navbar Styling */
   .navbar {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    background-color: #ac46ac;
+    background-color:rgb(30, 30, 30);
     padding: 10px 20px;
     position: sticky;
     top: 0;
@@ -169,7 +169,7 @@ header {
   }
   
   .logo a {
-    color: white;
+    color: rgb(183, 27, 186);
     text-decoration: none;
     font-size: 1.5rem;
     font-weight: bold;
@@ -186,14 +186,14 @@ header {
   }
   
   .nav-links a {
-    color: white;
+    color: rgb(183, 27, 186);
     text-decoration: none;
     font-size: 1rem;
     transition: color 0.3s ease;
   }
   
   .nav-links a:hover {
-    color:white; /* Tomato color on hover */
+    color:rgb(46, 45, 45); /* Tomato color on hover */
   }
   
   .hamburger {
@@ -205,7 +205,7 @@ header {
   .bar {
     width: 25px;
     height: 3px;
-    background-color: white;
+    background-color: rgb(19, 19, 19);
     margin: 3px 0;
   }
   
@@ -235,7 +235,7 @@ header {
   .btn {
     display: inline-block;
     padding: 10px 20px;
-    background-color:#ac46ac;
+    background-color:rgb(136, 35, 136);
     color: white;
     text-decoration: none;
     border-radius: 4px;
@@ -311,25 +311,25 @@ header {
   
   /* About Us Section */
   .about-us {
-    font-weight: 800;
+    font-weight: 2rem;
     padding: 50px 20px;
     text-align: center;
   }
   
   .about-us p {
-    color: rgb(185, 45, 185);
-    font-size: 1rem;
-    font-weight: 800;
+    color: rgb(136, 35, 136);
+    font-size: 1.5rem;
   }
-  .about-us{
-    color: rgb(171, 32, 171);
+  .about-us h1{
+    font-size: 2rem;
+    color: rgb(136, 35, 136);
   }
   
  /* Reset default margins and paddings */
 
 /* Header styling */
 header {
-  background-color: #000;
+  background-color: #484646;
   color: #fff;
   padding: 1rem;
   display: flex;
@@ -532,60 +532,8 @@ main {
           width: 100%;
           height: 100%;
           overflow-x: hidden; /* Prevent horizontal scrolling */
-          background-color: #f8f4ef;
         }
-          /* Navbar Styling */
-          .nava {
-            display: flex;
-            justify-content: space-between;
-            align-items: center;
-            background-color:#ac46ac;
-            padding: 10px 20px;
-            position: sticky;
-            top: 0;
-            z-index: 1000;
-          }
-          
-          .loo a {
-            color:white;
-            text-decoration: none;
-            font-size: 1.5rem;
-            font-weight: bold;
-          }
-          
-          .nava-links {
-            list-style: none;
-            display: flex;
-          }
-          
-          .nava-links li {
-            margin-left: 20px;
-          }
-          
-          .nava-links a {
-            color: white;
-            text-decoration: none;
-            font-size: 1rem;
-            transition: color 0.3s ease;
-          }
-          
-          .nv-link a:hover {
-          color: rgb(230, 81, 232);
-          }
-          
-          .amburger {
-            display: none;
-            flex-direction: column;
-            cursor: pointer;
-          }
-          
-          .bar {
-            width: 25px;
-            height: 3px;
-            background-color: white;
-            margin: 3px 0;
-          }
-          .image-container {
+        .image-container {
           display: grid;
           grid-template-columns: repeat(auto-fit, minmax(150px, 1fr)); /* Responsive columns */
           gap: 55px; /* Space between images */
@@ -594,28 +542,28 @@ main {
           padding: 10px; /* Optional: Add padding for spacing */
           box-sizing: border-box; /* Include padding in width/height calculations */
           overflow-y: auto; /* Enable scrolling if content overflows */
-        }
-        .image-container img {
-          width: 200px; /* Fill the grid cell */
-          height: 200px; /* Maintain aspect ratio */
-          object-fit: cover; /* Crop images to fit the container */
-          border-radius: 5px; /* Optional: Rounded corners */
-          gap: 1.5rem;
-          transition: transform 0.3s ease; /* Smooth hover effect */
-        }
-        
-        .image-container img:hover {
-          transform: scale(1.05); /* Enlarge images on hover */
-        }
-        .image-container img {
-          transition: transform 0.3s ease, opacity 0.3s ease;
-          opacity: 0.9;
-        }
-        
-        .image-container img:hover {
-          transform: scale(1.05);
-          opacity: 1;
-        }
+          }
+          .image-container img {
+            width: 200px; /* Fill the grid cell */
+            height: 200px; /* Maintain aspect ratio */
+            object-fit: cover; /* Crop images to fit the container */
+            border-radius: 5px; /* Optional: Rounded corners */
+            gap: 1.5rem;
+            transition: transform 0.3s ease; /* Smooth hover effect */
+          }
+          .image-container img:hover {
+            transform: scale(1.05); /* Enlarge images on hover */
+          }
+          .image-container img {
+            transition: transform 0.3s ease, opacity 0.3s ease;
+            opacity: 0.9;
+          }
+          
+          .image-container img:hover {
+            transform: scale(1.05);
+            opacity: 1;
+          }
+         
         .her{
             height: 15vh;
             display: flex;
