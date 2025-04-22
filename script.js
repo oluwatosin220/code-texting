@@ -1,6 +1,15 @@
-const hamburger = document.getElementById('hamburger');
-const navLinks = document. getElementById('navLinks');
+document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+    anchor.addEventListener('click', function (e) {
+        e.preventDefault();
 
-hamburger.onclick = () => {
-    navLinks.classList.toggle('active');
-};
+        document.querySelector(this.getAttribute('href')).scrollIntoView({
+            behavior: 'smooth'
+        });
+    });
+});
+const hamburger = document.getElementById('hamburger');
+const navLinks = document.querySelector('.nav-links');
+
+hamburger.addEventListener('click', () => {
+  navLinks.classList.toggle('active'); // Toggle the 'active' class to show/hide the menu
+});
