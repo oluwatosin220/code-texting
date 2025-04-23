@@ -16,11 +16,10 @@ body {
 .hero h1{
   color: white;
   font-size: 3rem;
-  text-shadow: 2px 2px 4px rgba(248, 38, 213, 0.5);
 }
 
 .glow-text {
-  font-family: 'Kaushan Script';
+  font-family: 'Tangerine', serif;
   font-size:50px;
   color: #fff;
   text-transform: uppercase;
@@ -238,25 +237,6 @@ transition: background-color 0.3s ease;
 background-color: #7f7e7e; /* Slightly darker pink on hover */
 }
 
-/* Media Query for Tablets and Mobile */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Smaller font size */
-  }
-
-  .services-card {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
-  }
-
-  .about-us h1 {
-    font-size: 1.8rem;
-  }
-
-  .about-us p {
-    font-size: 1rem;
-  }
-}
-
 /* Media Query for Small Mobile Devices */
 @media (max-width: 480px) {
   .services-card {
@@ -290,39 +270,6 @@ background-color: #7f7e7e; /* Slightly darker pink on hover */
   }
 }
 
-/* Media Query for Tablets and Mobile */
-@media (max-width: 768px) {
-  body {
-    font-size: 14px; /* Smaller font size */
-  }
-
-  .services-card {
-    grid-template-columns: repeat(2, 1fr); /* Two columns on tablets */
-  }
-
-  .about-us h1 {
-    font-size: 1.8rem;
-  }
-
-  .about-us p {
-    font-size: 1rem;
-  }
-}
-
-/* Media Query for Small Mobile Devices */
-@media (max-width: 480px) {
-  .services-card {
-    grid-template-columns: 1fr; /* Single column on small screens */
-  }
-
-  .hero-content h1 {
-    font-size: 1.5rem;
-  }
-
-  .hero-content p {
-    font-size: 0.9rem;
-  }
-}
 .services,.h2{
   align-items:center ;
   justify-content: center;
@@ -399,7 +346,7 @@ label {
   display: block;
   font-weight: bold;
   margin-bottom: 5px;
-  color: #fff;
+  color: rgb(136, 35, 136) ;
 }
 
 input[type="text"],
@@ -531,7 +478,27 @@ gap: 1rem;
   background-color: #c6358f; /* Instagram Pink */
 }
 
-* General Container Styling */
+/* Default styles */
+.container {
+  display: flex;
+  gap: 10px;
+}
+
+.image-card {
+  width: 30%;
+  height: auto;
+}
+
+/* Styles for screens smaller than 768px */
+@media (max-width: 768px) {
+  .row {
+    flex-direction: column; /* Stack images vertically */
+  }
+
+  .column img {
+    width: 100%; /* Make each card full-width on small screens */
+  }
+}
 .row {
 display: flex; /* Aligns images horizontally */
 justify-content: space-between; /* Adds equal spacing between images */
@@ -624,45 +591,57 @@ text-align: center;
     box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
     width: 600px;
     padding: 20px;
-    text-align: center;
-  }
-
-  /* Policy Section Styling */
-  .policy-section {
-    margin-bottom: 25px;
     text-align: left;
   }
 
-  .policy-section:last-child {
-    margin-bottom: 10px;
-  }
+  /* General Policy Section Styling */
+.policy-section {
+  margin-bottom: 20px; /* Add spacing between sections */
+}
 
-  .policy-section .icon {
-    font-size: 2rem;
-    color: #333333; /* Orange color for attention */
-    margin-bottom: 10px;
-    display: block;
-  }
+.policy-section .icon {
+  font-size: 40px; /* Adjust the size of the icons */
+  color: rgb(136, 35, 136) ; /* Green color for the icons */
+}
 
-  .policy-section h3 {
-    font-size: 1.2rem;
-    color: #333333;
-    margin-bottom: 5px;
-  }
+.policy-section h3 {
+  color:rgb(136, 35, 136);
+  margin: 10px 0; /* Add spacing between the icon and heading */
+  font-size: 24px;
+}
 
-  .policy-section p {
-    font-size: 1.1rem;
-    color: #666666;
-    line-height: 1.5;
-  }
-      #gallery{
-        margin: 0;
-        padding: 0;
-        width: 100%;
-        height: 100%;
-        overflow-x: hidden; /* Prevent horizontal scrolling */
-      }
-      
+.policy-section p {
+  color: #b536b9 ;
+  font-size: 16px;
+  line-height: 1.5; /* Improve readability */
+  margin-bottom: 20px; /* Add spacing before any buttons */
+}
+.center-whatsapp{
+ padding-left: 250px;
+}
+
+/* Specific Styling for WhatsApp Section */
+.whatsapp-section {
+  text-align: center; /* Center-align content only in this section */
+}
+
+.whatsapp-button {
+  display: inline-block;
+  margin-top: 10px; /* Add spacing above the button */
+  transition: transform 0.3s ease; /* Smooth hover effect */
+}
+
+.whatsapp-button img {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%; /* Make the icon circular */
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.2); /* Add a subtle shadow */
+}
+
+/* Hover Effect for WhatsApp Button */
+.whatsapp-button:hover {
+  transform: scale(1.1); /* Slightly enlarge on hover */
+}
       /* Media Query for Mobile */
       @media (max-width: 768px) {
         .image-container {
